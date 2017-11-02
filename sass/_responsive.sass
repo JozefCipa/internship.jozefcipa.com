@@ -1,0 +1,170 @@
+body
+
+	section
+		@media all and (max-width: 800px)
+			padding: 0 20px
+		@media all and (max-width: 700px)
+			h2
+				font-size: 6.5em
+		@media all and (max-width: 650px)
+			h2
+				font-size: 6em
+		@media all and (max-width: 540px)
+			h2
+				font-size: 5em
+				margin: -30px 0
+		@media all and (max-width: 420px)
+			h2
+				font-size: 3.7em
+
+	.red.dot
+		@media all and (max-width: 500px)
+			font-size: 3rem
+
+	#landing
+		@media all and (max-width: 760px)
+			.right
+				display: none
+
+			.links ul li a:hover
+				color: $black
+
+			.main-title 
+				.title
+					font-size: 12em
+
+				.title:first-of-type
+					font-size: 9em
+
+		@media all and (max-width: 650px)
+			.main-title 
+				.title
+					font-size: 10em
+					margin: -40px 0
+
+				.title:first-of-type
+					font-size: 7em
+					margin-bottom: -10px
+
+		@media all and (max-width: 540px)
+			.main-title 
+				.title
+					font-size: 8em
+					margin: -30px 0
+
+				.title:first-of-type
+					font-size: 5em
+					margin-bottom: -10px
+
+		@media all and (max-width: 420px)
+			.main-title 
+				.title
+					font-size: 6em
+					margin: -25px 0
+
+				.title:first-of-type
+					font-size: 4em
+
+	#about-me
+		@media all and (max-width: 1260px)
+			flex-direction: column
+
+			.left
+				.wrap
+					h4
+						margin-top: 100px
+
+			.right
+				justify-content: center
+
+		@media all and (max-width: 800px)
+			.right 
+				img
+					width: 100%
+
+		@media all and (max-width: 650px)
+			.left
+				.wrap
+					h4
+						font-size: 2em
+		@media all and (max-width: 420px)
+			.left
+				.wrap
+					h4
+						font-size: 1.6em
+
+	#why, #experience, #education, #skills, #contact
+		@media all and (max-width: 1200px)
+			& > div.content
+				width: 100%
+		@media all and (max-width: 500px)
+			& > div.content
+				font-size: 1.3em
+				line-height: 1.5em
+
+	#skills
+		@media all and (max-width: 1200px)
+			h3
+				margin-left: 0
+
+	#experience
+		@media all and (max-width: 1200px)
+			article
+				footer
+					.text
+						p
+							width: 100%
+							padding-left: 30px
+
+							&:before
+								left: 0
+					.photo
+						small
+							line-height: 1.5em
+							text-align: center
+
+		@media all and (max-width: 720px)
+			article
+				header	
+					.info
+						span.bart
+							display: block // bart.sk leave alone in one row
+						span.red
+							display: none // hide red symbols
+						small.duration
+							top: 80px
+
+				footer
+					flex-direction: column		
+
+		@media all and (max-width: 540px)
+			article
+				header	
+					.info
+						strong
+							font-size: .9em
+
+							span.bart
+								font-size: 1.6em
+						small.duration
+							top: 70px
+							font-size: .8em
+
+
+	#contact
+		@media all and (max-width: 840px)
+			#email
+				font-size: 2.5em
+
+		@media all and (max-width: 720px)
+			#email
+				font-size: 2em
+
+		@media all and (max-width: 600px)
+			#email
+				font-size: 1.5em
+
+		@media all and (max-width: 540px)
+			#email
+				font-size: 1em
+				padding: 15px 70px
