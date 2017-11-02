@@ -1,0 +1,28 @@
+{
+  "name": "Summer 2018 - Internship",
+  "version": "1.0.0",
+  "description": "Hi, I'm Jozef Cipa and I'm looking for software developer internship during summer 2018",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JozefCipa/internship.jozefcipa.com.git"
+  },
+  "keywords": [
+    "jozef cipa",
+    "internship",
+    "summer 2018",
+    "software internship"
+  ],
+  "author": "Jozef Cipa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JozefCipa/internship.jozefcipa.com/issues"
+  },
+  "homepage": "https://internship.jozefcipa.com",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

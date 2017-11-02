@@ -1,0 +1,312 @@
+@import "variables"
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+	// border: 1px solid magenta
+
+html
+	min-height: 100%
+
+body
+	overflow-x: hidden
+	color: $black
+	font-family: CircularLight, Helvetica, sans-serif
+
+	// Sections
+	section 
+		min-height: 100vh
+		// border: 1px solid green
+		padding: 0 40px
+
+		h2
+			font-size: 8em
+			margin: -50px 0
+
+		h2:first-of-type
+			margin-top: 30px
+
+	.red
+		color: $mainColor
+
+		&.dot
+			font-size: 5rem
+			margin: 0 5px
+
+	strong
+		font-family: CircularBold, Helvetica, sans-serif
+
+	// Contact links
+	.links
+		font-size: 1.8em
+
+		ul 
+			list-style: none
+
+			li
+				display: inline
+				margin: 0 5px
+
+				a
+					color: $lightgray
+					transition: all .3s linear
+
+					&:hover
+						color: $mainColor
+	// Sections 
+	#landing
+		display: flex
+		justify-content: center
+		align-items: stretch
+		position: relative
+		padding: 0
+
+		.background 
+			display: flex
+			flex-grow: 1
+			div
+				flex: 1
+				height: 100%
+
+				&.left
+					background: $mainColor
+
+
+		.main-title
+			position: absolute
+			z-index: 2
+			display: flex
+			justify-content: center
+			flex-direction: column
+			height: 100%
+
+			.title
+				text-transform: uppercase
+				font-size: 14em
+				margin: -45px 0
+				font-family: CircularBold, Helvetica, sans-serif
+				font-weight: bold
+
+
+			// I'm text
+			.title:first-of-type
+				margin-bottom: 20px
+				font-size: 11em
+				font-family: CircularLight, Helvetica, sans-serif
+				font-weight: 200
+
+		.links
+			position: absolute
+			right: 30px
+			top: 20px
+
+	#about-me
+		display: flex
+		justify-content: center
+		align-items: stretch
+		padding-right: 0
+
+		.left
+			flex: 2
+			display: flex
+			align-items: stretch
+
+			.wrap
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+				h4
+					font-size: 2.7em
+					margin-bottom: 150px
+
+		.right
+			flex: 1
+			display: flex
+			justify-content: flex-end
+			align-items: flex-end
+			position: relative
+
+			.bottom-transparency
+				position: absolute
+				top: 60%
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))
+
+	// Common settings for sections
+	#why, #experience, #education, #skills, #contact
+		display: flex
+		flex-direction: column
+
+		h2
+			margin-bottom: 40px
+
+		& > div.content
+			flex: 1 1 100%
+			display: flex
+			align-items: center
+			font-size: 1.6em
+			width: 80%
+			margin: 0 auto
+			line-height: 1.8em
+
+	#skills
+
+		& > div.content
+			flex-direction: column
+			align-items: flex-start
+
+		h3
+			margin-top: 40px
+			font-size: 2em
+			margin-left: -45px
+
+		ul
+			list-style: none
+
+			li
+				margin-left: 5px
+
+			li:first-of-type
+				margin-top: 5px
+
+		h3:before,
+		ul li:before
+			content: '- '
+			color: $mainColor
+
+	#experience
+		article
+			margin-top: 30px
+
+			header
+				a
+					display: flex
+					align-items: center
+					color: $black
+					text-decoration: none
+
+					&:hover
+						text-decoration: none
+
+				img
+					border-radius: 50%
+					width: 84px
+					margin-right: 20px
+
+				.info
+					display: flex
+					flex-direction: column
+					justify-content: center
+					position: relative
+
+					strong
+						font-size: 1.5em
+
+					small
+						position: absolute
+						top: 30px
+						font-size: 1.1rem
+						color: $darkgray
+
+			& > p
+				margin-top: 50px
+
+			// recommendation
+			footer
+				display: flex
+				font-size: .8rem
+				margin-top: 40px
+				align-items: center
+
+				.photo
+					flex: 1
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+
+					small
+						font-size: .8rem
+						color: $darkgray
+
+				.text
+					flex: 3
+
+					p
+						font-size: 1.4em
+						line-height: 1.3em
+						width: 70%
+						color: $darkgray
+						position: relative
+						margin-top: 20px
+						font-family: CircularItalic, Helvetica, sans-serif
+						font-style: italic
+
+						&:before
+							content: '"'
+							position: absolute
+							left: -30px
+							font-size: 4em
+
+					.red
+						color: lighten($mainColor, 15%)
+
+	#contact
+		min-height: 50vh
+		margin-top: 20px
+
+		& > div.content
+			justify-content: space-around
+			flex-direction: column
+			border-top: 1px solid $lightgray
+
+		#email
+			font-size: 3em
+			text-decoration: none
+			color: $black
+			padding: 35px 40px
+			border-radius: 150px
+			transition: all .2s ease-in-out
+			background: $mainColor
+			color: #fff
+			box-shadow: 2px 4px 10px $darkgray
+			margin-top: 70px
+			-webkit-animation-duration: 4s
+			-webkit-animation-delay: 6s
+
+			&:hover
+				background: darken($mainColor, 8%)
+
+		.links
+			margin-top: 30px
+
+	#copyright
+		display: flex
+		justify-content: flex-end
+		margin: 20px 0
+
+		div
+			padding-top: 20px
+			color: $lightgray
+			padding-right: 10px
+			font-family: monospace
+			margin: 0 20px
+
+			a
+				color: $lightgray
+
+				&:hover
+					color: $mainColor
+
+				i
+					position: relative
+					top: 2px
+
+// Load responsive CSS
+@import "responsive"
