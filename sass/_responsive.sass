@@ -22,149 +22,141 @@ body
 			font-size: 3rem
 
 	#landing
-		@media all and (max-width: 760px)
-			.right
+		.right
+			@media all and (max-width: 760px)
 				display: none
-
-			.links ul li a:hover
-				color: $black
-
-			.main-title 
-				.title
+		.links
+			@media all and (max-width: 760px)
+				ul li a:hover
+					color: $black
+		.main-title
+			.title
+				@media all and (max-width: 760px)
 					font-size: 12em
 
-				.title:first-of-type
-					font-size: 9em
-
-		@media all and (max-width: 650px)
-			.main-title 
-				.title
+				@media all and (max-width: 650px)
 					font-size: 10em
 					margin: -40px 0
 
-				.title:first-of-type
-					font-size: 7em
-					margin-bottom: -10px
-
-		@media all and (max-width: 540px)
-			.main-title 
-				.title
+				@media all and (max-width: 540px)
 					font-size: 8em
 					margin: -30px 0
 
-				.title:first-of-type
-					font-size: 5em
-					margin-bottom: -10px
-
-		@media all and (max-width: 420px)
-			.main-title 
-				.title
+				@media all and (max-width: 420px)
 					font-size: 6em
 					margin: -25px 0
 
-				.title:first-of-type
+			.title:first-of-type
+				@media all and (max-width: 760px)
+					font-size: 9em
+
+				@media all and (max-width: 650px)
+					font-size: 7em
+					margin-bottom: -10px
+
+				@media all and (max-width: 540px)
+					font-size: 5em
+					margin-bottom: -10px
+
+				@media all and (max-width: 420px)
 					font-size: 4em
 
 	#about-me
 		@media all and (max-width: 1260px)
 			flex-direction: column
 
-			.left
-				.wrap
-					h4
+		.left
+			.wrap
+				h4
+					@media all and (max-width: 1260px)
 						margin-top: 100px
 
-			.right
-				justify-content: center
-
-		@media all and (max-width: 800px)
-			.right 
-				img
-					width: 100%
-
-		@media all and (max-width: 650px)
-			.left
-				.wrap
-					h4
+					@media all and (max-width: 650px)
 						font-size: 2em
-		@media all and (max-width: 420px)
-			.left
-				.wrap
-					h4
+
+					@media all and (max-width: 420px)
 						font-size: 1.6em
 
+		.right
+			@media all and (max-width: 1260px)
+				justify-content: center
+
+			img
+				@media all and (max-width: 800px) 
+					width: 100%	
+
 	#why, #experience, #education, #skills, #contact
-		@media all and (max-width: 1200px)
-			& > div.content
+		& > div.content
+			@media all and (max-width: 1200px)
 				width: 100%
-		@media all and (max-width: 500px)
-			& > div.content
+
+			@media all and (max-width: 500px)
 				font-size: 1.3em
 				line-height: 1.5em
 
 	#skills
-		@media all and (max-width: 1200px)
-			h3
+		h3
+			@media all and (max-width: 1200px)
 				margin-left: 0
 
 	#experience
-		@media all and (max-width: 1200px)
-			article
-				footer
-					.text
-						p
+		article
+			header
+				.info
+					span.bart
+						@media all and (max-width: 720px)
+							display: block // bart.sk leave alone in one row
+					
+					span.red
+						@media all and (max-width: 720px)
+							display: none // hide red symbols
+					
+					small.duration
+						@media all and (max-width: 720px)
+							top: 80px
+
+						@media all and (max-width: 540px)
+							top: 70px
+							font-size: .75em
+
+					strong
+						@media all and (max-width: 540px)
+							font-size: .9em
+
+						span.bart
+							@media all and (max-width: 540px)
+								font-size: 1.6em
+
+			footer
+				@media all and (max-width: 720px)
+					flex-direction: column
+
+				.text
+					p
+						@media all and (max-width: 1200px)
 							width: 100%
 							padding-left: 30px
 
 							&:before
 								left: 0
-					.photo
-						small
+				.photo
+					small
+						@media all and (max-width: 1200px)
 							line-height: 1.5em
 							text-align: center
 
-		@media all and (max-width: 720px)
-			article
-				header	
-					.info
-						span.bart
-							display: block // bart.sk leave alone in one row
-						span.red
-							display: none // hide red symbols
-						small.duration
-							top: 80px
-
-				footer
-					flex-direction: column		
-
-		@media all and (max-width: 540px)
-			article
-				header	
-					.info
-						strong
-							font-size: .9em
-
-							span.bart
-								font-size: 1.6em
-						small.duration
-							top: 70px
-							font-size: .8em
-
 
 	#contact
-		@media all and (max-width: 840px)
-			#email
+		#email
+			@media all and (max-width: 840px)
 				font-size: 2.5em
 
-		@media all and (max-width: 720px)
-			#email
+			@media all and (max-width: 720px)
 				font-size: 2em
 
-		@media all and (max-width: 600px)
-			#email
+			@media all and (max-width: 600px)
 				font-size: 1.5em
 
-		@media all and (max-width: 540px)
-			#email
+			@media all and (max-width: 540px)
 				font-size: 1em
 				padding: 15px 70px
