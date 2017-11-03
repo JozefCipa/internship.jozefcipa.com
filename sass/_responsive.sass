@@ -16,6 +16,10 @@ body
 		@media all and (max-width: 420px)
 			h2
 				font-size: 3.7em
+		@media all and (min-width: 350px)
+			h2
+				font-size: 3.4em
+				margin: -25px 0
 
 	.red.dot
 		@media all and (max-width: 500px)
@@ -31,14 +35,14 @@ body
 					color: $black
 		.main-title
 			.title
-				@media all and (max-width: 760px)
+				@media all and (max-width: 760px), all and (max-height: 670px)
 					font-size: 12em
 
-				@media all and (max-width: 650px)
+				@media all and (max-width: 650px), all and (max-height: 630px)
 					font-size: 10em
 					margin: -40px 0
 
-				@media all and (max-width: 540px)
+				@media all and (max-width: 540px), all and (max-height: 530px)
 					font-size: 8em
 					margin: -30px 0
 
@@ -46,20 +50,28 @@ body
 					font-size: 6em
 					margin: -25px 0
 
+				@media all and (max-width: 350px), all and (max-height: 310px)
+					font-size: 5em
+					margin: -20px 0
+
 			.title:first-of-type
-				@media all and (max-width: 760px)
+				@media all and (max-width: 760px), all and (max-height: 670px)
 					font-size: 9em
 
-				@media all and (max-width: 650px)
+				@media all and (max-width: 650px), all and (max-height: 630px)
 					font-size: 7em
 					margin-bottom: -10px
 
-				@media all and (max-width: 540px)
+				@media all and (max-width: 540px), all and (max-height: 530px)
 					font-size: 5em
 					margin-bottom: -10px
 
 				@media all and (max-width: 420px)
 					font-size: 4em
+
+				@media all and (max-width: 350px), all and (max-height: 310px)
+					font-size: 3em
+					margin-bottom: -5px
 
 	#about-me
 		@media all and (max-width: 1260px)
@@ -119,9 +131,16 @@ body
 							top: 70px
 							font-size: .75em
 
+						@media all and (max-width: 350px)
+							top: 50px
+							font-size: .5em
+
 					strong
 						@media all and (max-width: 540px)
 							font-size: .9em
+
+						@media all and (max-width: 350px)
+							font-size: .7em
 
 						span.bart
 							@media all and (max-width: 540px)
@@ -160,3 +179,13 @@ body
 			@media all and (max-width: 540px)
 				font-size: 1em
 				padding: 15px 70px
+			@media all and (max-width: 350px)
+				padding: 15px 40px
+
+	#copyright
+		@media all and (max-width: 1200px)
+			justify-content: center
+
+		div
+			@media all and (max-width: 1200px)
+				padding-right: 0
