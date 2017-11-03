@@ -33,6 +33,15 @@ body
 		&.dot
 			font-size: 5rem
 			margin: 0 5px
+		&.no-margin
+			margin: 0
+
+	a.red
+		color: $lightMain
+
+		&:hover
+			color: $mainColor
+			text-decoration: none
 
 	strong
 		font-family: CircularBold, Helvetica, sans-serif
@@ -190,8 +199,14 @@ body
 		ul li:before
 			content: '- '
 			color: $mainColor
+			margin-left: -13px
 
-	#experience
+		.see-more
+			font-size: 1.1em
+
+	#experience, #education
+		min-height: 100vh
+
 		article
 			margin-top: 30px
 
@@ -266,7 +281,7 @@ body
 							font-size: 4em
 
 					.red
-						color: lighten($mainColor, 15%)
+						color: $lightMain
 
 	#contact
 		min-height: 50vh

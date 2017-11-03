@@ -111,7 +111,21 @@ body
 			@media all and (max-width: 1200px)
 				margin-left: 0
 
+			@media all and (max-width: 420px)
+				font-size: 1.6em
+
+		ul
+			li
+				@media all and (max-width: 1200px)
+					margin-left: 40px
+
+				@media all and (max-width: 450px)
+					margin-left: 22px
+
 	#experience
+		@media all and (max-width: 1200px)
+			min-height: auto
+
 		article
 			header
 				.info
@@ -164,7 +178,35 @@ body
 							line-height: 1.5em
 							text-align: center
 
+	#education
+		@media all and (max-width: 1200px)
+			min-height: auto
 
+		article
+			header
+				.info
+					small.duration
+						@media all and (max-width: 980px)
+							top: 80px
+
+						@media all and (max-width: 680px)
+							top: 40px
+
+						@media all and (max-width: 430px)
+							top: 70px
+							font-size: .75em
+
+						@media all and (max-width: 350px)
+							top: 30px
+							font-size: .5em
+
+					strong
+						@media all and (max-width: 680px)
+							font-size: 1em
+							line-height: 1em
+
+						@media all and (max-width: 350px)
+							font-size: .7em
 	#contact
 		#email
 			@media all and (max-width: 840px)
