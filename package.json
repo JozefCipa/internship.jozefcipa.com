@@ -1,28 +1,48 @@
 {
-  "name": "Summer 2018 - Internship",
+  "name": "internship.jozefcipa.com",
   "version": "1.0.0",
-  "description": "Hi, I'm Jozef Cipa and I'm looking for software developer internship during summer 2018",
+  "description": "Summer 2018 - Internship",
   "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie 9"
+  ],
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/JozefCipa/internship.jozefcipa.com.git"
+    "url": "git+https://github.com/JozefCipa/internship.jozefcipa.com.git"
   },
   "keywords": [
-    "jozef cipa",
+    "jozef",
+    "cipa",
+    "internshipm",
+    "summer",
+    "2018",
+    "software",
     "internship",
-    "summer 2018",
-    "software internship"
+    "software",
+    "software",
+    "development",
+    "web",
+    "web",
+    "development"
   ],
-  "author": "Jozef Cipa",
+  "author": "https://jozefcipa.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JozefCipa/internship.jozefcipa.com/issues"
   },
-  "homepage": "https://internship.jozefcipa.com",
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+  "homepage": "https://github.com/JozefCipa/internship.jozefcipa.com#readme"
 }
