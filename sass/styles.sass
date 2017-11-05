@@ -167,10 +167,12 @@ body
 			line-height: 1.8em
 
 	#skills
-
 		& > div.content
 			flex-direction: column
 			align-items: flex-start
+
+			& > div
+				margin-bottom: 30px
 
 		h3
 			margin-top: 40px
@@ -191,7 +193,7 @@ body
 		h3:before
 			content: '.'
 			color: $mainColor
-			font-size: 1.5em
+			font-size: 1.3em
 			position: relative
 			bottom: 3px
 			right: 5px
@@ -304,8 +306,6 @@ body
 			color: #fff
 			box-shadow: 2px 4px 10px $darkgray
 			margin-top: 70px
-			-webkit-animation-duration: 4s
-			-webkit-animation-delay: 6s
 
 			&:hover
 				background: darken($mainColor, 8%)
@@ -320,20 +320,25 @@ body
 
 		div
 			padding-top: 20px
-			color: $lightgray
+			color: $darkgray
 			padding-right: 10px
 			font-family: monospace
 			margin: 0 20px
 
 			a
-				color: $lightgray
 
-				&:hover
-					color: $mainColor
-
+				&:not(.red)
+					color: $darkgray
 				i
 					position: relative
 					top: 2px
+
+// animated.css customised
+.animated.fadeIn
+	animation-duration: 1.3s
+
+#contact #email
+	animation-duration: 3s
 
 // Load responsive CSS
 @import "responsive"
