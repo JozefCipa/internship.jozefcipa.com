@@ -1,7 +1,7 @@
 {
   "name": "internship.jozefcipa.com",
   "version": "1.0.0",
-  "description": "Summer 2018 - Internship",
+  "description": "Summer 2018 - Internship at Spotify",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",

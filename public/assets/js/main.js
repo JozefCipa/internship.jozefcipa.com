@@ -1,19 +1,10 @@
 $(document).ready(function () {
 
+	Cookies.set('spotify-website-visited', true, { domain: 'jozefcipa.com', expires: 365});
+
 	// hide sections
 	$('#about-me, #why, #skills, #experience, #education').css('opacity', 0);
 	$('#skills .content div').css('opacity', 0);
-	
-	// title update
-	var $title = $('title');
-	var title = $title.html();
-	$(window)
-		.on('blur', function () {
-			$title.html('So, what do you think ?');
-		})
-		.on('focus', function () {
-			$title.html(title);
-		});
 
 	$(window).on('load scroll', function () {
 
